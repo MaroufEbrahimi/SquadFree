@@ -1,0 +1,49 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+:root {
+   --gen-color: #67b0d1;
+   --hover-color: #8ec4dd;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   color: #444;
+}
+
+a {
+   text-decoration: none;
+   color: var(--gen-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Raleway', sans-serif;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+::-webkit-scrollbar-track {
+   background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--gen-color);
+   border-radius: 10px;
+}
+
+/* General Style */
+::selection{
+   background: var(--gen-color);
+}
