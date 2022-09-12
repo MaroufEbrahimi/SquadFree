@@ -13,6 +13,7 @@
 body {
    font-family: 'Open Sans', sans-serif;
    color: #444;
+   background-color: #ccc;
 }
 
 a {
@@ -64,8 +65,9 @@ h6 {
 header {
    position: fixed;
    width: 100%;
-   height: 11vh;
-   background: #67b0d1;
+   padding: 14px 0;
+   background: transparent;
+   transition: all .5s;
 }
 
 header .container {
@@ -82,6 +84,10 @@ header .logo a {
    text-transform: uppercase;
 }
 
+.nav_links {
+   margin-top: -5px;
+}
+
 .nav_links ul {
    display: flex;
    list-style: none;
@@ -93,14 +99,104 @@ header .logo a {
 }
 
 .nav_links ul li a {
-   font-size: 16px;
+   font-size: 17px;
    font-weight: 700;
    color: #fff;
    padding: 10px 16px;
    transition: .3s;
 }
 
+.nav_links ul li a i {
+   font-size: 13px;
+}
+
 .nav_links ul li a:hover {
    background: rgba(255, 255, 255, .2);
    color: #2f4d5a;
+}
+
+header.sticky {
+   background: rgba(55, 142, 181, 0.6);
+   box-shadow: 0px 0px 1px rgb(0 0 0 / 10);
+   padding: 0px;
+}
+
+.drop_down {
+   display: none;
+   animation: ani .3s;
+}
+
+@keyframes ani {
+   from {
+      top: 110px;
+   }
+
+   to {
+      top: 60px;
+   }
+}
+
+.nav_links ul li:hover .drop_down {
+   position: absolute;
+   display: block;
+   color: #000;
+   background: #fff;
+   margin-left: -15px;
+   margin-top: 12px;
+   z-index: 1000;
+   transition: all .3s ease-in-out;
+   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.drop_down ul {
+   display: block;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.drop_down ul li {
+   width: 190px;
+   padding: 10px;
+   transition: all .4s ease-in-out;
+}
+
+.drop_down ul li a {
+   font-size: 15px;
+   font-weight: bold;
+   color: #000;
+   font-weight: 600;
+}
+
+.drop_down ul li a:hover {
+   color: var(--gen-color);
+}
+
+.bi-chevron-right {
+   float: right;
+}
+
+.deep_drop_down {
+   display: none;
+   animation: ani2 0.3s;
+}
+
+@keyframes ani2 {
+   from {
+      left: 60px;
+   }
+
+   to {
+      left: 10px;
+   }
+}
+
+.deep_right:hover .deep_drop_down {
+   position: absolute;
+   display: block;
+   margin-top: -20px;
+   margin-left: -198px;
+   background: #fff;
+   z-index: 1000;
+   box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+   transition: all 1s ease-in-out;
 }
