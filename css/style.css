@@ -13,7 +13,6 @@
 body {
    font-family: 'Open Sans', sans-serif;
    color: #444;
-   background-color: #ccc;
 }
 
 a {
@@ -52,6 +51,7 @@ h6 {
 /* General Style */
 ::selection {
    background: var(--gen-color);
+   color: #000;
 }
 
 .container {
@@ -68,6 +68,7 @@ header {
    padding: 14px 0;
    background: transparent;
    transition: all .5s;
+   z-index: 1000;
 }
 
 header .container {
@@ -103,22 +104,23 @@ header .logo a {
    font-weight: 700;
    color: #fff;
    padding: 10px 16px;
-   transition: .3s;
+   transition: all .3s ease-in-out;
 }
 
 .nav_links ul li a i {
    font-size: 13px;
 }
 
-.nav_links ul li a:hover {
+.nav_links ul li a:hover,
+.active {
    background: rgba(255, 255, 255, .2);
-   color: #2f4d5a;
+   color: #162466;
 }
 
 header.sticky {
-   background: rgba(55, 142, 181, 0.6);
-   box-shadow: 0px 0px 1px rgb(0 0 0 / 10);
+   background: rgba(55, 142, 181, 0.9);
    padding: 0px;
+   padding-bottom: 7px;
 }
 
 .drop_down {
@@ -199,4 +201,60 @@ header.sticky {
    z-index: 1000;
    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
    transition: all 1s ease-in-out;
+}
+
+/* showcase */
+.showcase {
+   position: relative;
+   background: linear-gradient(rgba(55, 142, 181, .5), rgba(55, 142, 181, .2)), url('../assets/img/showcase.jpg') top center;
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+}
+
+.showcase_info {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #fff;
+   text-align: center;
+}
+
+.showcase_info h1 {
+   color: #fff;
+   font-size: 64px;
+   font-weight: 700;
+   margin: 0 0 10px 0;
+   line-height: 56px;
+   text-transform: uppercase;
+   text-shadow: -1px 0 2px #2f4d5a;
+}
+
+.showcase_info h2 {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 50px;
+   text-shadow: -1px 0 2px #2f4d5a;
+}
+
+.showcase_info a {
+   border: 2px solid #fff;
+   border-radius: 50px;
+   display: inline-block;
+   width: 64px;
+   height: 64px;
+   font-size: 36px;
+   color: #fff;
+   text-align: center;
+   padding: 7px 0;
+   margin: 10px;
+   transition: .3s ease-in-out;
+}
+
+.showcase_info a:hover {
+   padding-top: 11px;
+   background: rgba(255, 255, 255, 0.15);
 }
