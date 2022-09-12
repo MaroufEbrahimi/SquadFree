@@ -8,6 +8,8 @@
 
    <!-- Vendor files -->
    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+   <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+
    <!-- link -->
    <link rel="stylesheet" href="./css/style.css">
 
@@ -23,12 +25,12 @@
          </div>
          <div class="nav_links">
             <ul>
-               <li><a href="#home">Home</a></li>
-               <li><a href="#about">About Us</a></li>
-               <li><a href="#services">Services</a></li>
-               <li><a href="#portfolio">Portfolio</a></li>
-               <li><a href="#team">Team</a></li>
-               <li><a href="#">Drop Down <i class="bi bi-chevron-down"></i></a>
+               <li><a class="link_active active" href="#home">Home</a></li>
+               <li><a onclick="wait()" class="link_active" href="#about">About Us</a></li>
+               <li><a onclick="wait()" class="link_active" href="#services">Services</a></li>
+               <li><a onclick="wait()" class="link_active" href="#portfolio">Portfolio</a></li>
+               <li><a onclick="wait()" class="link_active" href="#team">Team</a></li>
+               <li><a onclick="wait()" href="#">Drop Down <i class="bi bi-chevron-down"></i></a>
                   <div class="drop_down">
                      <ul>
                         <li><a href="#">Drop Down 1</a></li>
@@ -49,16 +51,22 @@
                      </ul>
                   </div>
                </li>
-               <li><a href="#contact">Contact</a></li>
+               <li><a onclick="wait()" class="link_active" href="#contact">Contact</a></li>
             </ul>
          </div>
       </div>
    </header><!-- End of Header -->
 
+   <!-- Showcase -->
+   <div class="showcase">
+      <div class="showcase_info">
+         <h1>welcome to squad</h1>
+         <h2>we are team of talented designers making websites with React</h2>
+         <a href="#about"><i class="bx bx-chevrons-down"></i></a>
+      </div>
+   </div> <!-- End of Showcase -->
 
 
-
-   <div style="height: 130vh;"></div>
    <!-- Link of javaScript files -->
    <script src="./js/main.js"></script>
 </body>
