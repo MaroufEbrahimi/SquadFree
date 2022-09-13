@@ -7,6 +7,9 @@
  
 
 # features
+* animation
+* boxicons
+* bootstrap-icons
 
 
 # Would you like to help and support me?
