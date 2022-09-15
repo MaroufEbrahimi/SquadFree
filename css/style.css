@@ -55,11 +55,41 @@ h6 {
 }
 
 .container {
-   max-width: 1150px;
+   max-width: 1180px;
    margin: 0 auto;
    overflow: hidden;
 }
 
+/* Section title */
+.section_title {
+   text-align: center;
+   padding: 2rem 0;
+}
+
+.section_title h1 {
+   position: relative;
+   font-size: 32px;
+   color: #2f4d5a;
+   font-weight: bold;
+   margin-bottom: 30px;
+   z-index: 2;
+}
+
+.section_title h1::after{
+   content: '';
+   position: absolute;
+   width: 120px;
+   height: 65px;
+   background: url('../assets/img/section-title-bg.png') no-repeat;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+}
+
+.section_title p {
+   line-height: 25px;
+}
 
 /* Header */
 header {
