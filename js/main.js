@@ -20,3 +20,55 @@ function activeLink() {
 link_active.forEach(e => {
    e.addEventListener('click', activeLink);
 });
+
+// Back to top
+(function scrollToTop() {
+   let toTop = document.getElementById('toTop');
+
+   function buttonVisibality() {
+      if (window.scrollY <= 150) {
+         toTop.fadeOut();
+      } else {
+         toTop.fadeIn();
+      }
+   }
+
+   window.addEventListener('scroll', buttonVisibality);
+   toTop.addEventListener('click', function () {
+      scrollTo(0, 0);
+   });
+}());
+
+function myFadeIn(e) {
+   let eleOpacity = Number(getComputedStyle(e).opacity).toPrecision(2);
+   e.style.opacity = eleOpacity;
+   if (eleOpacity >= 1) {
+      return;
+   }
+
+   e.style.opacity = Number(eleOpacity) + 1;
+   setTimeout(() => {
+      myFadeIn(e);
+   }, 20);
+}
+
+function myFadeOut(e) {
+   let eleOpacity = Number(getComputedStyle(e).opacity).toPrecision(2);
+   e.style.opacity = eleOpacity;
+   if (eleOpacity <= 0) {
+      return;
+   }
+
+   e.style.opacity = Number(eleOpacity) - 1;
+   setTimeout(() => {
+      myFadeOut(e);
+   }, 10);
+}
+
+Element.prototype.fadeIn = function () {
+   myFadeIn(this);
+}
+
+Element.prototype.fadeOut = function () {
+   myFadeOut(this);
+}
