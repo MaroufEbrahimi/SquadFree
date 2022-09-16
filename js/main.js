@@ -72,3 +72,15 @@ Element.prototype.fadeIn = function () {
 Element.prototype.fadeOut = function () {
    myFadeOut(this);
 }
+
+// Portfolio
+let btn_active = document.querySelectorAll('.btn_active');
+function active_buttons() {
+   btn_active.forEach(e => {
+      e.classList.remove('port_active');
+   });
+   this.classList.add('port_active');
+}
+btn_active.forEach(e => {
+   e.addEventListener('click', active_buttons);
+});
