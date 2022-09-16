@@ -450,6 +450,43 @@ header.sticky {
    color: #fff;
 }
 
+/* Portfolio section */
+.portfolio {
+   padding: 40px 0;
+}
+
+.portfolio_btn {
+   margin: 20px 0;
+   padding: 20px 25px;
+   text-align: center;
+   background: #ecf5f9;
+   width: 290px;
+   height: 25px;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.portfolio_btn span {
+   text-transform: uppercase;
+   font-size: 14px;
+   padding: 0 17px;
+   cursor: pointer;
+   color: #2f4d5a;
+   font-weight: 600;
+   transition: all .3s ease-in-out;
+}
+
+.portfolio_btn .port_active,
+.portfolio_btn span:hover {
+   color: #67b0d1;
+}
+
 /* back to top */
 .backToTop {
    position: fixed;
