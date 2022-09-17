@@ -115,6 +115,7 @@ header .container {
 header .logo a {
    color: #fff;
    font-size: 24px;
+   font-family: "Poppins", sans-serif;
    line-height: 1;
    letter-spacing: 1;
    text-transform: uppercase;
@@ -150,6 +151,10 @@ header .logo a {
 .active {
    background: rgba(255, 255, 255, .2);
    color: #162466;
+}
+
+.nav_links ul li a:focus {
+   font-family: "Raleway", sans-serif;
 }
 
 header.sticky {
