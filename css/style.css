@@ -100,7 +100,7 @@ section {
 header {
    position: fixed;
    width: 100%;
-   padding: 14px 0;
+   padding: 10px 0;
    background: transparent;
    transition: all .5s;
    z-index: 1000;
@@ -160,7 +160,7 @@ header .logo a {
 header.sticky {
    background: rgba(55, 142, 181, 0.9);
    padding: 0px;
-   padding-bottom: 7px;
+   padding-bottom: 5px;
 }
 
 .drop_down {
@@ -170,11 +170,25 @@ header.sticky {
 
 @keyframes ani {
    from {
-      top: 110px;
+      top: 120px;
    }
 
    to {
       top: 60px;
+   }
+}
+
+.drop_down_scroll {
+   animation: ani_scroll .3s;
+}
+
+@keyframes ani_scroll {
+   from {
+      top: 120px;
+   }
+
+   to {
+      top: 50px;
    }
 }
 
@@ -184,10 +198,10 @@ header.sticky {
    color: #000;
    background: #fff;
    margin-left: -15px;
-   margin-top: 12px;
+   margin-top: 10px;
    z-index: 1000;
-   transition: all .3s ease-in-out;
    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+   transition: all .3s ease-in-out;
 }
 
 .drop_down ul {
@@ -197,15 +211,14 @@ header.sticky {
 }
 
 .drop_down ul li {
-   width: 190px;
+   width: 195px;
    padding: 10px;
    transition: all .4s ease-in-out;
 }
 
 .drop_down ul li a {
    font-size: 15px;
-   font-weight: bold;
-   color: #000;
+   color: #303030;
    font-weight: 600;
 }
 
@@ -235,7 +248,7 @@ header.sticky {
 .deep_right:hover .deep_drop_down {
    position: absolute;
    display: block;
-   margin-top: -20px;
+   margin-top: -30px;
    margin-left: -198px;
    background: #fff;
    z-index: 1000;
