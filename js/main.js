@@ -5,8 +5,10 @@ function wait() {
 
 // header scrolled
 const header = document.querySelector('header');
+const drop_down = document.querySelector('.drop_down');
 window.addEventListener('scroll', function () {
    header.classList.toggle('sticky', this.window.scrollY > 0);
+   drop_down.classList.toggle('drop_down_scroll', this.window.scrollY > 0);
 })
 
 // header active link
