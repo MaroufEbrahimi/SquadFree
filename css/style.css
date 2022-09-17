@@ -63,12 +63,12 @@ h6 {
 /* Section title */
 .section_title {
    text-align: center;
-   padding: 10px 0 30px 0;
+   padding: 90px 0 30px 0;
 }
 
 section {
-   padding: 60px 0;
-   overflow: hidden;
+   /* padding: 60px 0; */
+   overflow: hidden; 
 }
 
 .section_title h1 {
@@ -315,7 +315,7 @@ header.sticky {
 /* About */
 .about {
    background: url('../assets/img/about-bg.jpg');
-   padding: 60px 0;
+   padding: 80px 0 50px 0;
    background-size: cover;
    position: relative;
 }
@@ -469,10 +469,6 @@ header.sticky {
 }
 
 /* Portfolio section */
-.portfolio {
-   padding: 40px 0;
-}
-
 .portfolio_btn {
    margin: 20px 0;
    padding: 20px 25px;
@@ -573,6 +569,92 @@ header.sticky {
 
 .portfolio_boxes .por_layer a + a {
    border-left: 1px solid var(--hover-color)
+}
+
+/* Team */
+.team {
+   margin-bottom: 70px;
+}
+.team_boxes {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+   grid-gap: 1.3rem;
+}
+
+.team_boxes .team_box {
+   position: relative;
+   margin-bottom: 80px;
+   text-align: center;
+}
+
+.team_boxes .team_box img {
+   width: 100%;
+   object-fit: cover;
+   overflow: hidden;
+}
+
+.team_box .team_layer {
+   position: absolute;
+   overflow: hidden;
+   top: 85%;
+   right: 20px;
+   left: 20px;
+   max-height: 90px;
+   color: #2f4d5a;
+   background: #fff;
+   padding: 15px 0;
+   box-shadow: 0px 2px 15px rgba(0, 0, 0, .1);
+   transition: max-height .4s ease-in-out;
+}
+
+.team_boxes .team_box:hover .team_layer {
+   max-height: 300px;
+}
+
+.team_box .team_layer h4 {
+   position: relative;
+   margin-bottom: 20px;
+   color: #2f4d5a;
+   font-size: 16px;
+   font-weight: 600;
+   padding-bottom: 10px;
+}
+
+.team_box .team_layer h4::after {
+   content: '';
+   position: absolute;
+   width: 50px;
+   height: 1px;
+   background: #b1cbd7;
+   display: block;
+   bottom: 0;
+   /* left: 50%;
+   right: 50%;
+   transform: translate(-50%, -50%); */
+   left: calc(50% - 25px);
+}
+
+.team_box .team_layer p {
+   font-size: 13px;
+   font-style: italic;
+}
+
+.team_box .team_layer .team_social {
+   margin-top: 15px;
+}
+
+.team_box .team_layer .team_social a {
+   color: #52869d;
+   transition: color .3s;
+}
+
+.team_box .team_layer .team_social a:hover {
+   color: var(--gen-color);
+}
+
+.team_box .team_layer .team_social i {
+   margin: 0 2px;
+   font-size: 16px;
 }
 
 /* back to top */
