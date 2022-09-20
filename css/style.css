@@ -271,6 +271,7 @@ header.sticky {
    transform: translate(-50%, -50%);
    color: #fff;
    text-align: center;
+   width: 100%;
 }
 
 .showcase_info h1 {
@@ -658,7 +659,7 @@ header.sticky {
 
 /* Contact */
 .contact {
-   background: #e6e8e9;
+   background: #f4f9fc;
    padding-bottom: 80px;
 }
 
@@ -702,6 +703,58 @@ header.sticky {
    margin-bottom: 0;
 }
 
+.contact .form_box {
+   padding-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+   grid-gap: 1.5rem;
+   padding-bottom: 30px;
+}
+
+.form_box iframe {
+   width: 100%;
+   height: 100%;
+}
+
+.form_box form {
+   display: grid;
+   grid-gap: 1rem;
+   background: #fff;
+   padding: 30px;
+   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+   text-align: center;
+}
+
+.form_box form input, textarea {
+   padding: 0px 15px;
+   width: 100%;
+   font-size: 14px;
+   outline: none;
+   color: #777;
+   border: 1px solid #dad5d5;
+}
+
+.form_box form input:focus, textarea:focus {
+   border-color: var(--gen-color);
+}
+
+.form_box form textarea {
+   padding: 12px 15px;
+}
+
+.form_box form button {
+   padding: 0px 24px;
+   font-size: 16px;
+   border: none;
+   background: var(--gen-color);
+   color: #fff;
+   cursor: pointer;
+   transition: all .3s ease-in;
+}
+
+.form_box form button:hover {
+   background: #8ec4dd;
+}
 
 /* back to top */
 .backToTop {
