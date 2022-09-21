@@ -678,7 +678,7 @@ header.sticky {
    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
 }
 
-.full_width {
+.contact .full_width {
    grid-column: 1/3;
 }
 
@@ -704,9 +704,10 @@ header.sticky {
 }
 
 .contact .form_box {
+   position: relative;
    padding-top: 30px;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+   grid-template-columns: repeat(2, 1fr);
    grid-gap: 1.5rem;
    padding-bottom: 30px;
 }
@@ -718,6 +719,7 @@ header.sticky {
 
 .form_box form {
    display: grid;
+   grid-template-columns: 1fr 1fr;
    grid-gap: 1rem;
    background: #fff;
    padding: 30px;
@@ -726,12 +728,15 @@ header.sticky {
 }
 
 .form_box form input, textarea {
-   padding: 0px 15px;
    width: 100%;
    font-size: 14px;
    outline: none;
    color: #777;
    border: 1px solid #dad5d5;
+}
+
+.form_box form input {
+   padding: 10px 15px;
 }
 
 .form_box form input:focus, textarea:focus {
@@ -740,10 +745,12 @@ header.sticky {
 
 .form_box form textarea {
    padding: 12px 15px;
+   padding-bottom: 30px;
+   resize: vertical;
 }
 
 .form_box form button {
-   padding: 0px 24px;
+   padding: 10px 24px;
    font-size: 16px;
    border: none;
    background: var(--gen-color);
