@@ -1,8 +1,4 @@
 
-function wait() {
-   alert('waiting for future')
-}
-
 // header scrolled
 const header = document.querySelector('header');
 const drop_down = document.querySelector('.drop_down');
@@ -86,3 +82,47 @@ function active_buttons() {
 btn_active.forEach(e => {
    e.addEventListener('click', active_buttons);
 });
+
+// portfolio boxes
+const por_all_btn = document.getElementById('por_all_btn');
+const por_app_btn = document.getElementById('por_app_btn');
+const por_card_btn = document.getElementById('por_card_btn');
+const por_web_btn = document.getElementById('por_web_btn');
+
+const por_boxes = document.getElementsByClassName('por_box');
+// all images
+por_all_btn.onclick = function () {
+   for (e in por_boxes) {
+      por_boxes[e].style.display = 'grid';
+   }
+}
+// app images
+por_app_btn.onclick = function () {
+   for (e in por_boxes) {
+      if (por_boxes[e].className == 'por_box por_app') {
+         por_boxes[e].style.display = 'grid';
+      } else {
+         por_boxes[e].style.display = 'none';
+      }
+   }
+}
+// card images
+por_card_btn.onclick = function () {
+   for (e in por_boxes) {
+      if (por_boxes[e].className == 'por_box por_card') {
+         por_boxes[e].style.display = 'grid';
+      } else {
+         por_boxes[e].style.display = 'none';
+      }
+   }
+}
+// web images
+por_web_btn.onclick = function () {
+   for (e in por_boxes) {
+      if (por_boxes[e].className == 'por_box por_web') {
+         por_boxes[e].style.display = 'grid';
+      } else {
+         por_boxes[e].style.display = 'none';
+      }
+   }
+}
