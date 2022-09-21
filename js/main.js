@@ -126,3 +126,29 @@ por_web_btn.onclick = function () {
       }
    }
 }
+
+// portfolio model
+let por_model = document.querySelector('.por_model');
+
+let model_img = document.getElementById('img01');
+
+function open_model_fun() {
+   let open_model = document.querySelectorAll('.open_model');
+   for (let a = 0; a < open_model.length; a++) {
+      por_model.style.display = 'block';
+      open_model_fun_img();
+   }
+}
+
+function open_model_fun_img() {
+   let por_img = document.querySelectorAll('.por_img');
+   for (let a = 0; a < por_img.length; a++) {
+      model_img.src = por_img[a].src;
+   }
+}
+
+// close the image model
+const close_por_model = document.getElementById('close_por_model')
+close_por_model.addEventListener('click', function () {
+   por_model.style.display = 'none';
+});
