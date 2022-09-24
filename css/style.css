@@ -219,6 +219,7 @@ header.sticky {
    font-size: 15px;
    color: #303030;
    font-weight: 600;
+   transition: all .3s ease-in-out;
 }
 
 .drop_down ul li a:hover {
@@ -402,7 +403,7 @@ header.sticky {
 /* Services */
 .services_boxes {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
    grid-gap: 1.5rem;
    margin: 10px;
 }
@@ -472,6 +473,7 @@ header.sticky {
 .portfolio {
    position: relative;
 }
+
 .portfolio_btn {
    margin: 20px 0;
    padding: 20px 25px;
@@ -491,6 +493,7 @@ header.sticky {
 
 .portfolio_btn span {
    text-transform: uppercase;
+   background-color: transparent;
    font-size: 14px;
    padding: 0 17px;
    cursor: pointer;
@@ -513,6 +516,11 @@ header.sticky {
 .portfolio_boxes .por_box {
    position: relative;
    overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.portfolio_boxes .por_box .por_img {
    width: 100%;
    height: 100%;
 }
@@ -592,7 +600,7 @@ header.sticky {
 
 .portfolio .por_model #close_por_model {
    position: absolute;
-   font-size: 40px;
+   font-size: 30px;
    color: #ffffffb3;
    top: 27px;
    right: 35px;
@@ -605,7 +613,11 @@ header.sticky {
 }
 
 .portfolio .por_model #img01 {
+   padding-top: 50px;
    animation: zoom .6s;
+   width: 100%;
+   height: 90%;
+   object-fit: contain;
 }
 
 @keyframes zoom {
@@ -836,4 +848,104 @@ header.sticky {
 
 .backToTop:hover{
    background: #86c0da;
+}
+
+
+/* Media Query */
+@media (max-width: 1330px) {
+   .container {
+      max-width: 1080px;
+   }
+
+   .about .container {
+      grid-template-columns: 1fr;
+   }
+
+   .portfolio .por_model #img01 {
+      padding: 30px;
+      padding-top: 10%;
+      width: 90%;
+      height: 100%;
+   }
+}
+
+@media (max-width: 1200px) {
+   .container {
+      max-width: 1000px;
+   }
+}
+
+@media (max-width: 990px) {
+   .container {
+      max-width: 780px;
+   }
+
+   .nav_links {
+      display: none;
+   }
+
+   .services_boxes {
+      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+   }
+
+   .portfolio .por_model #img01 {
+      width: 100%;
+      height: 90%;
+   }
+
+   .contact .con_boxes .con_box {
+      grid-column: 3/3;
+   }
+
+   .contact .form_box {
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 770px) {
+   .container {
+      max-width: 580px;
+   }
+
+   .showcase_info h1 {
+      font-size: 30px;
+   }
+
+   .about .about_box {
+      grid-template-columns: 1fr;
+      text-align: center;
+   }
+
+   .services_boxes {
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+   }
+
+   .contact .con_boxes .con_box, 
+   .form_box form input {
+      grid-column: 1/3;
+   }
+}
+
+@media (max-width: 576px) {
+   .container {
+      max-width: 430px;
+   }
+
+   .form_box form button {
+      grid-column: 1/3;
+   }
+}
+
+@media (max-width: 360px) {
+   .container {
+      max-width: 300px;
+   }
+
+   .services_boxes {
+      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+   }
+
+   .team_boxes {
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+   }
 }
