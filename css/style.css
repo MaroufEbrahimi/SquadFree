@@ -936,6 +936,12 @@ header.sticky {
    }
 }
 
+@media (max-width: 420px) {
+   .container {
+      max-width: 355px;
+   }
+}
+
 @media (max-width: 360px) {
    .container {
       max-width: 300px;
