@@ -21,15 +21,12 @@ link_active.forEach(e => {
 
 // Mobile res
 const side_menu = document.getElementById('side_menu');
-const mobile_res = document.querySelector('.mobile_res');
 function openSlideMenu() {
    side_menu.style.display = 'block';
-   mobile_res.style.display = 'none';
 }
 
 function closeSide() {
    side_menu.style.display = 'none';
-   mobile_res.style.display = 'block';
 }
 
 // Back to top
