@@ -890,6 +890,7 @@ header.sticky {
    z-index: 1000;
    transition: all .3s;
    opacity: 0;
+   cursor: default;
 }
 
 .backToTop i {
