@@ -35,8 +35,10 @@ function closeSide() {
 
    function buttonVisibality() {
       if (window.scrollY <= 150) {
+         toTop.style.cursor = 'default';
          toTop.fadeOut();
       } else {
+         toTop.style.cursor = 'pointer';
          toTop.fadeIn();
       }
    }
