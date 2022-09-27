@@ -19,6 +19,19 @@ link_active.forEach(e => {
    e.addEventListener('click', activeLink);
 });
 
+// Mobile res
+const side_menu = document.getElementById('side_menu');
+const mobile_res = document.querySelector('.mobile_res');
+function openSlideMenu() {
+   side_menu.style.display = 'block';
+   mobile_res.style.display = 'none';
+}
+
+function closeSide() {
+   side_menu.style.display = 'none';
+   mobile_res.style.display = 'block';
+}
+
 // Back to top
 (function scrollToTop() {
    let toTop = document.getElementById('toTop');
