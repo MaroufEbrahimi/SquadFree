@@ -99,14 +99,13 @@ section {
 header {
    position: fixed;
    width: 100%;
-   padding: 10px 0;
+   padding: 16px 0;
    background: transparent;
    transition: all .5s;
    z-index: 1000;
 }
 
 header .container {
-   padding-top: 18px;
    display: flex;
    justify-content: space-between;
 }
@@ -158,8 +157,7 @@ header .logo a {
 
 header.sticky {
    background: rgba(55, 142, 181, 0.9);
-   padding: 0px;
-   padding-bottom: 5px;
+   padding: 8px 0 11px 0;
 }
 
 .drop_down {
@@ -417,7 +415,6 @@ header.sticky {
 .about_box>a i {
    font-size: 18px;
    position: absolute;
-   top: 8px;
    right: 16px;
 }
 
