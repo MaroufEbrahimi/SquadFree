@@ -167,11 +167,11 @@ header.sticky {
 
 @keyframes ani {
    from {
-      top: 120px;
+      top: 110px;
    }
 
    to {
-      top: 60px;
+      top: 45px;
    }
 }
 
@@ -185,7 +185,7 @@ header.sticky {
    }
 
    to {
-      top: 50px;
+      top: 40px;
    }
 }
 
@@ -767,7 +767,7 @@ header.sticky {
 /* Contact */
 .contact {
    background: #f4f9fc;
-   padding-bottom: 80px;
+   padding-bottom: 60px;
 }
 
 .contact .con_boxes {
@@ -869,6 +869,30 @@ header.sticky {
 .form_box form button:hover {
    background: #8ec4dd;
 }
+
+/* footer */
+.footer {
+   background-color: #263f49;
+   padding: 30px 0;
+   color: #fff;
+   font-size: 14px;
+}
+
+.footer .container {
+   text-align: center;
+   letter-spacing: 0.1px;
+   color: #fff;
+}
+
+.footer .container h5 {
+   padding-bottom: 15px;
+   font-size: 13px;
+}
+
+.footer .container h6 {
+   font-size: 12px;
+}
+
 
 /* back to top */
 .backToTop {
