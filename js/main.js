@@ -145,19 +145,65 @@ let por_model = document.querySelector('.por_model');
 let model_img = document.getElementById('img01');
 
 function open_model_fun() {
-   let open_model = document.querySelectorAll('.open_model');
-   for (let a = 0; a < open_model.length; a++) {
-      por_model.style.display = 'block';
-      open_model_fun_img();
-   }
+   por_model.style.display = 'block';
 }
 
-function open_model_fun_img() {
-   let por_img = document.querySelectorAll('.por_img');
-   for (let a = 0; a < por_img.length; a++) {
-      model_img.src = por_img[a].src;
-   }
-}
+let por_img1 = document.getElementById('por_img1');
+let por_img2 = document.getElementById('por_img2');
+let por_img3 = document.getElementById('por_img3');
+let por_img4 = document.getElementById('por_img4');
+let por_img5 = document.getElementById('por_img5');
+let por_img6 = document.getElementById('por_img6');
+let por_img7 = document.getElementById('por_img7');
+let por_img8 = document.getElementById('por_img8');
+let por_img9 = document.getElementById('por_img9');
+
+let open_model1 = document.getElementById('open_model1')
+let open_model2 = document.getElementById('open_model2')
+let open_model3 = document.getElementById('open_model3')
+let open_model4 = document.getElementById('open_model4')
+let open_model5 = document.getElementById('open_model5')
+let open_model6 = document.getElementById('open_model6')
+let open_model7 = document.getElementById('open_model7')
+let open_model8 = document.getElementById('open_model8')
+let open_model9 = document.getElementById('open_model9')
+
+open_model1.addEventListener('click', function () {
+   model_img.src = por_img1.src;
+});
+
+open_model2.addEventListener('click', function () {
+   model_img.src = por_img2.src;
+});
+
+open_model3.addEventListener('click', function () {
+   model_img.src = por_img3.src;
+});
+
+open_model4.addEventListener('click', function () {
+   model_img.src = por_img4.src;
+});
+
+open_model5.addEventListener('click', function () {
+   model_img.src = por_img5.src;
+});
+
+open_model6.addEventListener('click', function () {
+   model_img.src = por_img6.src;
+});
+
+open_model7.addEventListener('click', function () {
+   model_img.src = por_img7.src;
+});
+
+open_model8.addEventListener('click', function () {
+   model_img.src = por_img8.src;
+});
+
+open_model9.addEventListener('click', function () {
+   model_img.src = por_img9.src;
+});
+
 
 // close the image model
 const close_por_model = document.getElementById('close_por_model')
