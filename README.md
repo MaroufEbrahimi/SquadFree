@@ -13,5 +13,6 @@
 
 
 # Would you like to help and support me?
-* Star and follow my Github repository
+* If you like this project, you owe a star.
+* And if you like it, you can follow my Github repository
 ...
