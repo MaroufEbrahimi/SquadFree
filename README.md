@@ -8,8 +8,10 @@
 
 # features
 * animation
+* google-fonts
 * boxicons
 * bootstrap-icons
+* transition
 
 
 # Would you like to help and support me?
